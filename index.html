@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<script>
+  const variavel1 = +prompt('Digite o valor da variável 1:');
+  const variavel2 = +prompt('Digite o valor da variável 2:');
+
+  function somaDeDoisNumeros(x, y) {
+    return x + y;
+  }
+
+  function subDeDoisNumeros(b, c) {
+    return b - c;
+  }
+
+  function multDeDoisNumeros(b, c) {
+    return b * c;
+  }
+
+  function divDeDoisNumeros(b, c) {
+    if (c === 0) {
+      return 'Não é possível dividir por zero!';
+    } else {
+      return b / c;
+    }
+  }
+
+  alert(`Soma de ${variavel1} + ${variavel2} = ${somaDeDoisNumeros(variavel1, variavel2)}`);
+  alert(`Subtração de ${variavel1} - ${variavel2} = ${subDeDoisNumeros(variavel1, variavel2)}`);
+  alert(`Multiplicação de ${variavel1} * ${variavel2} = ${multDeDoisNumeros(variavel1, variavel2)}`);
+  alert(`Divisão de ${variavel1} / ${variavel2} = ${divDeDoisNumeros(variavel1, variavel2)}`);
+</script>
+<body>
+</body>
+</html>
