@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="style" href="style.css" />
 </head>
-<script>
-  const variavel1 = +prompt('Digite o valor da variável 1:');
-  const variavel2 = +prompt('Digite o valor da variável 2:');
-
-  function somaDeDoisNumeros(x, y) {
-    return x + y;
-  }
-
-  function subDeDoisNumeros(b, c) {
-    return b - c;
-  }
-
-  function multDeDoisNumeros(b, c) {
-    return b * c;
-  }
-
-  function divDeDoisNumeros(b, c) {
-    if (c === 0) {
-      return 'Não é possível dividir por zero!';
-    } else {
-      return b / c;
-    }
-  }
-
-  alert(`Soma de ${variavel1} + ${variavel2} = ${somaDeDoisNumeros(variavel1, variavel2)}`);
-  alert(`Subtração de ${variavel1} - ${variavel2} = ${subDeDoisNumeros(variavel1, variavel2)}`);
-  alert(`Multiplicação de ${variavel1} * ${variavel2} = ${multDeDoisNumeros(variavel1, variavel2)}`);
-  alert(`Divisão de ${variavel1} / ${variavel2} = ${divDeDoisNumeros(variavel1, variavel2)}`);
-</script>
 <body>
+  <div class="calculator">
+    <input type="text" id="display" class="display" disabled />
+
+    <div class="buttons">
+      <button class="clear">C</button>
+      <button class="operator">/</button>
+      <button class="operator">*</button>
+      <button class="operator">-</button>
+
+      <button>7</button>
+      <button>8</button>
+      <button>9</button>
+      <button class="operator">+</button>
+
+      <button>4</button>
+      <button>5</button>
+      <button>6</button>
+      <button class="equal">=</button>
+
+      <button>1</button>
+      <button>2</button>
+      <button>3</button>
+      <button>.</button>
+
+      <button class="zero">0</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
